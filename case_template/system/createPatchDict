@@ -1,0 +1,47 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2606                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location "system";
+    object      createPatchDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Turns the two raw periodic patches written by gmshToFoam into a matched cyclic pair.
+pointSync       false;
+
+patches
+(
+    {
+        name            periodic_bottom;
+        patchInfo
+        {
+            type                cyclic;
+            neighbourPatch      periodic_top;
+@CYCLIC_TRANSFORM_BOTTOM@
+        }
+        constructFrom   patches;
+        patches         (bottom_raw);
+    }
+    {
+        name            periodic_top;
+        patchInfo
+        {
+            type                cyclic;
+            neighbourPatch      periodic_bottom;
+@CYCLIC_TRANSFORM_TOP@
+        }
+        constructFrom   patches;
+        patches         (top_raw);
+    }
+);
+
+// ************************************************************************* //

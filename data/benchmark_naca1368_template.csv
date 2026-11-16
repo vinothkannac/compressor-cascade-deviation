@@ -1,0 +1,2 @@
+beta1_deg,incidence_deg,turning_deg,loss_coefficient,source
+45.0,-0.18,22.2,0.0167,"NACA RM L51G31 (TR 1368 data) Fig. 30(g), read off plot at alpha1=15 deg; see data/benchmark_notes.md"

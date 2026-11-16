@@ -1,0 +1,6 @@
+# Tested with: Python 3.14, numpy 2.5.5, scipy 1.18.1, matplotlib 3.11.2, gmsh 4.15.2
+# (OpenFOAM itself is not a pip package: ESI v2606 from openfoam.com)
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+gmsh>=4.12

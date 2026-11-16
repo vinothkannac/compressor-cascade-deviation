@@ -1,0 +1,36 @@
+# NACA 65-010 basic thickness form: half thickness y (percent chord) at station x (percent chord).
+# STATUS: VERIFIED against two independent sources (checked 2026-11-16):
+#   (1) PDAS "Recomputed Tables of Coordinates of NACA Airfoil Profiles, Meanlines and Sections" (R. L. Carmichael,
+#       https://www.pdas.com/avd.pdf, p. 57, "NACA Profile 65-010"; recomputed from NACA Report 824 and
+#       Abbott, von Doenhoff & Stivers, Theory of Wing Sections). These are the values below (4 decimals).
+#   (2) NACA RM L51G31 (= Report 1368 data), Table I, column "Derived 65-010 airfoil" (3 decimals):
+#       agrees with (1) to within 0.0074 percent chord at every station. LE radius there 0.687 %c (PDAS: 0.6242 %c).
+# NOT checked against the book's Appendix I scan itself (not available here); (1) is its recomputation.
+# The loader (cascade/geometry.py) interpolates in sqrt(x) and adds the trailing-edge closure itself.
+x_percent,y_percent
+0.0,0.0
+0.5,0.7697
+0.75,0.9278
+1.25,1.1616
+2.5,1.5748
+5.0,2.1794
+7.5,2.6491
+10.0,3.0418
+15.0,3.6681
+20.0,4.1435
+25.0,4.5020
+30.0,4.7605
+35.0,4.9247
+40.0,4.9981
+45.0,4.9631
+50.0,4.8089
+55.0,4.5309
+60.0,4.1471
+65.0,3.6822
+70.0,3.1537
+75.0,2.5828
+80.0,1.9850
+85.0,1.3834
+90.0,0.8064
+95.0,0.3010
+100.0,0.0

@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Remove all generated cases and caches. Keeps results/ (use  ./Allclean --results  to wipe results/ too).
+cd "$(dirname "$0")" || exit 1
+rm -rf runs/* cascade/__pycache__ scripts/__pycache__
+if [ "$1" = "--results" ]; then
+    find results -mindepth 1 ! -name 'README.md' -delete
+fi
+echo "cleaned"

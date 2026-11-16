@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Environment check, then the baseline case and its plot.  (Mesh study and sweep: see README.)
+cd "$(dirname "$0")" || exit 1
+set -e
+source ./env.sh
+python3 scripts/check_setup.py
+python3 scripts/run_case.py configs/base.json --case runs/base
+python3 scripts/plot_fields.py runs/base --out results/fields_base.png

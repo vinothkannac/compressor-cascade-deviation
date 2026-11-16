@@ -1,0 +1,108 @@
+{
+  "cases": {
+    "coarse": {
+      "h_ref": 0.0113,
+      "n_cells": 14388,
+      "converged": true,
+      "iterations": 431,
+      "yplus_blade": {
+        "min": 0.047722505,
+        "mean": 0.540521580619403,
+        "max": 1.6983874,
+        "n_faces": 268
+      }
+    },
+    "medium": {
+      "h_ref": 0.008,
+      "n_cells": 24692,
+      "converged": true,
+      "iterations": 587,
+      "yplus_blade": {
+        "min": 0.012624209,
+        "mean": 0.5349411722466488,
+        "max": 1.6945205,
+        "n_faces": 373
+      }
+    },
+    "fine": {
+      "h_ref": 0.00566,
+      "n_cells": 44008,
+      "converged": true,
+      "iterations": 848,
+      "yplus_blade": {
+        "min": 0.023089889,
+        "mean": 0.5312594852072937,
+        "max": 1.6999199,
+        "n_faces": 521
+      }
+    }
+  },
+  "quantities": {
+    "loss_coefficient": {
+      "f_fine": 0.017437538709861086,
+      "f_medium": 0.017768092639916067,
+      "f_coarse": 0.018094121606692555,
+      "r21": 1.3350197229931922,
+      "r32": 1.3100199804506312,
+      "eps21": 0.00033055393005498174,
+      "eps32": 0.00032602896677648777,
+      "monotonic": true,
+      "p": null,
+      "f_extrapolated": null,
+      "gci_fine_rel": null,
+      "gci_fine_abs": null,
+      "gci_medium_rel": null,
+      "flag": "changes grow with refinement (diverging): no order, no GCI"
+    },
+    "turning_deg": {
+      "f_fine": 21.421686537423483,
+      "f_medium": 21.282984598636826,
+      "f_coarse": 21.29474407252038,
+      "r21": 1.3350197229931922,
+      "r32": 1.3100199804506312,
+      "eps21": -0.1387019387866566,
+      "eps32": 0.01175947388355425,
+      "monotonic": false,
+      "p": null,
+      "f_extrapolated": null,
+      "gci_fine_rel": null,
+      "gci_fine_abs": null,
+      "gci_medium_rel": null,
+      "flag": "oscillatory (non-monotonic) convergence: no GCI computed"
+    },
+    "beta2_deg": {
+      "f_fine": 23.57543964777335,
+      "f_medium": 23.711856511910558,
+      "f_coarse": 23.70041902513885,
+      "r21": 1.3350197229931922,
+      "r32": 1.3100199804506312,
+      "eps21": 0.13641686413720677,
+      "eps32": -0.011437486771708194,
+      "monotonic": false,
+      "p": null,
+      "f_extrapolated": null,
+      "gci_fine_rel": null,
+      "gci_fine_abs": null,
+      "gci_medium_rel": null,
+      "flag": "oscillatory (non-monotonic) convergence: no GCI computed"
+    },
+    "static_pressure_rise_coeff": {
+      "f_fine": 0.3794829692870676,
+      "f_medium": 0.3783631358393923,
+      "f_coarse": 0.3781652697493517,
+      "r21": 1.3350197229931922,
+      "r32": 1.3100199804506312,
+      "eps21": -0.0011198334476753002,
+      "eps32": -0.0001978660900405771,
+      "monotonic": true,
+      "p": null,
+      "f_extrapolated": null,
+      "gci_fine_rel": null,
+      "gci_fine_abs": null,
+      "gci_medium_rel": null,
+      "flag": "changes grow with refinement (diverging): no order, no GCI"
+    }
+  },
+  "not_converged": [],
+  "note": "wall-normal boundary-layer resolution held fixed; h = sqrt(1/N) with actual N"
+}

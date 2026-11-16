@@ -1,0 +1,48 @@
+{
+  "name": "base",
+  "_comment": "Baseline blade, mesh, flow and solver settings. Angles from axial, positive towards +y. Re and camber are ASSUMPTIONS (see README).",
+  "blade": {
+    "chord": 1.0,
+    "stagger_deg": 30.0,
+    "cl0": 1.2,
+    "camber_per_cl0_deg": 25.3,
+    "te_half_thickness": 0.0015,
+    "table": "data/naca65_010_thickness.csv"
+  },
+  "deviation": {
+    "le_scale": 1.0,
+    "thickness_scale": 1.0,
+    "stagger_delta_deg": 0.0
+  },
+  "cascade": {
+    "pitch": 1.0,
+    "inlet_axial_chords": 1.0,
+    "outlet_axial_chords": 2.0,
+    "plane_axial_chords": 0.5
+  },
+  "flow": {
+    "V1": 1.0,
+    "beta1_deg": 45.0,
+    "reynolds": 245000.0,
+    "turbulence_intensity": 0.01,
+    "viscosity_ratio": 10.0
+  },
+  "mesh": {
+    "h_ref": 0.008,
+    "wall_first_layer": 0.0001,
+    "bl_ratio": 1.2,
+    "bl_thickness": 0.02,
+    "wake_angle_deg": 25.0,
+    "z_thickness": 0.05
+  },
+  "solver": {
+    "max_iter": 3000,
+    "write_interval": 3000,
+    "res_p": 1e-5,
+    "res_U": 5e-6,
+    "res_k": 1e-6,
+    "res_omega": 1e-6,
+    "relax_U": 0.9,
+    "relax_turb": 0.7
+  }
+}

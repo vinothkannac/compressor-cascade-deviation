@@ -1,0 +1,9 @@
+runs/
+.venv/
+__pycache__/
+*.pyc
+*:Zone.Identifier
+# OpenFOAM leftovers if a case is ever run outside runs/
+log.*
+processor*/
+postProcessing/

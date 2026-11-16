@@ -1,0 +1,5 @@
+quantity,coarse,medium,fine,observed_order,extrapolated,gci_fine_percent,gci_fine_abs,monotonic,flag
+loss_coefficient,0.018094121606692555,0.017768092639916067,0.017437538709861086,,,,,True,"changes grow with refinement (diverging): no order, no GCI"
+turning_deg,21.29474407252038,21.282984598636826,21.421686537423483,,,,,False,oscillatory (non-monotonic) convergence: no GCI computed
+beta2_deg,23.70041902513885,23.711856511910558,23.57543964777335,,,,,False,oscillatory (non-monotonic) convergence: no GCI computed
+static_pressure_rise_coeff,0.3781652697493517,0.3783631358393923,0.3794829692870676,,,,,True,"changes grow with refinement (diverging): no order, no GCI"

@@ -1,0 +1,32 @@
+# Thickness form of the blades actually TESTED in NACA RM L51G31 / Report 1368:
+# Table I, column "65(216)-010 airfoil combined with y = 0.0015x" (half thickness, percent chord; 3 decimals).
+# Read from the report scan (page 23 of the report) and checked digit by digit against the image.
+# It already contains the trailing-edge thickness (0.150 % chord half thickness at x = 100), so use it with
+# blade.te_half_thickness = 0 (see README, "Matching the tested blade").
+x_percent,y_percent
+0.0,0.0
+0.5,0.752
+0.75,0.890
+1.25,1.124
+2.5,1.571
+5.0,2.222
+7.5,2.709
+10.0,3.111
+15.0,3.746
+20.0,4.218
+25.0,4.570
+30.0,4.824
+35.0,4.982
+40.0,5.057
+45.0,5.029
+50.0,4.870
+55.0,4.570
+60.0,4.151
+65.0,3.627
+70.0,3.038
+75.0,2.451
+80.0,1.847
+85.0,1.251
+90.0,0.749
+95.0,0.354
+100.0,0.150
